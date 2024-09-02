@@ -1,0 +1,100 @@
+ /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column; /* Arrange header and content vertically */
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Header Styles */
+.main-header {
+    width: 100%;
+    background-color: #212121; /* Same as background to blend */
+    padding: 20px 0;
+    border-bottom: 1px solid #444; /* Subtle bottom border for separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    position: fixed; /* Fix header at top */
+    top: 0;
+    z-index: 1000;
+}
+
+.main-title {
+    font-size: 2.3rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Main Container */
+.main-container {
+    margin-top: 100px; /* Offset for fixed header */
+    text-align: center;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Dropdown Style */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content Style */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Same dark grey as buttons */
+    min-width: 110px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Dropdown Links Style */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #444; /* Slightly lighter grey */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Category Button Styles */
+.category-button {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.category-button:hover {
+    background-color: #444; /* Slightly lighter grey */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px); /* Lift effect */
+}
